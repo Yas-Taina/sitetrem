@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>?????</title>
+<link rel="stylesheet" href="style.css">
+ <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+
+    }
+    .container {
+      position: relative;
+      text-align: center;
+    }
+    .image {
+      width: 400px;
+      height: auto;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+      color: red;
+ background-color: rgba(0, 0, 0, 0);
+      font-size: 24px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .arrow:active {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .textbox {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      display: none;
+    }
+  </style>
+</head>	
+<body>
+  <div class="container">
+    <img id="mainImage" class="image" src="./img/image1.jpg" alt="Image 1">
+    <button id="arrowButton" class="arrow">&#9654;</button>
+    <div id="textBox" class="textbox">Você sente que não deveria se aproximar mais.</div>
+  </div>
+  <script>
+    const images = ["./img/image1.jpg", "./img/image2.jpg", "./img/image3.jpg"];
+    let currentIndex = 0;
+
+    const mainImage = document.getElementById("mainImage");
+    const arrowButton = document.getElementById("arrowButton");
+    const textBox = document.getElementById("textBox");
+
+    arrowButton.addEventListener("click", () => {
+      currentIndex++;
+      if (currentIndex < images.length) {
+        mainImage.src = images[currentIndex];
+      }
+      if (currentIndex === images.length - 1) {
+        arrowButton.style.display = "none";
+      }
+    });
+
+    mainImage.addEventListener("click", () => {
+      if (currentIndex === images.length - 1) {
+        textBox.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

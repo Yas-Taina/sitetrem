@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nome": "yas",
+    "cpf": "1029837281",
+    "email": "yas.silva@gmail.com",
+    "vagao": "Economico",
+    "userId": 1
+  },
+  {
+    "id": 4,
+    "nome": "yas",
+    "cpf": "10278937918",
+    "email": "yasmin.taina@ufpr.br",
+    "vagao": "Economico",
+    "userId": 4
+  }
+]

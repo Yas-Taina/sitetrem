@@ -54,6 +54,11 @@ header {
 	background-color: #C1A37F;
 }
 
+#user-nav{
+	background-color: #C1A37F;
+
+}
+
 .mainheader {	
 	display: flex;
 	justify-content: space-between;

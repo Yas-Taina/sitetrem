@@ -33,18 +33,18 @@ function insertFooter() {
 		<div class="mainlogo">
 			<img src="../img/mainlogo.png" alt="Logo do Expresso Sul-Americano" id="logofooter">
 		</div>
-		<div class="container">
+		<div class="container" id="containerboxendere">
 			<div id="box">
 				<h4>Fale conosco</h4>
 				    <form id="validationForm">
         				<label for="name">Nome:</label>
-        				<input type="text" id="name" name="name" required>
+        				<input type="text" id="namees" name="name" required>
 
         				<label for="document">Documento:</label>
-        				<input type="text" id="document" name="document" required>
+        				<input type="text" id="documentes" name="document" required>
 
         				<label for="message">Mensagem:</label>
-        				<textarea id="message" name="message" rows="4" required></textarea>
+        				<textarea id="messagees" name="message" rows="4" required></textarea>
 
         				<button type="submit" id="botaoes">Enviar</button>
     				</form>
@@ -121,9 +121,9 @@ function easter(){
         document.getElementById('validationForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const name = document.getElementById('name').value;
-            const documentValue = document.getElementById('document').value;
-            const message = document.getElementById('message').value;
+            const name = document.getElementById('namees').value;
+            const documentValue = document.getElementById('documentes').value;
+            const message = document.getElementById('messagees').value;
 
             // Verificar valores específicos
             if (name === 'Elizabeth Sarre' && documentValue === '95573622' && message === 'id: 1337, assento: 12') {

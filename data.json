@@ -28,7 +28,13 @@
       "firstName": "Yasmin",
       "email": "yasmint.taina@yahoo.com.br",
       "password": "$2b$10$PVwPy8qyTRGpaDAP8aafuOvnHugj/Lf0LHZ.7q0zDEqujA58JL5Me"
+    },
+    {
+      "userId": 6,
+      "firstName": "João",
+      "email": "jojo@gay.ufpr.br",
+      "password": "$2b$10$t2d.5/9r1pKf2nbOO.hb4.tmQ6hwqnBGdulqRHeTG2rLsdtoGkDiO"
     }
   ],
-  "lastUserId": 5
+  "lastUserId": 6
 }

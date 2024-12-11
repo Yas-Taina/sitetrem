@@ -1,4 +1,3 @@
-
 function insertHeader() {
 	const headerHTML = `
 		<div class = "login-box">

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const response = await fetch('/check-login');
         if (!response.ok) {
             alert('Você precisa estar logado para realizar reservas.');
-            window.location.href = '/login.html';
+            window.location.href = '../login.html';
         }
     }
 

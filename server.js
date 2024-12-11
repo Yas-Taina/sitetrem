@@ -14,7 +14,7 @@ app.use(bodyParser.json());  // Configura o body parser para JSON
 
 // Configuração do middleware express-session
 app.use(session({
-    secret: 'secret-key',  // Use uma chave secreta segura
+    secret: 'secret-key',  
     resave: false,  // Não reseta a sessão a cada requisição
     saveUninitialized: false,  // Não salva sessões não inicializadas
     cookie: {
